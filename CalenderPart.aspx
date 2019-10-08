@@ -23,6 +23,7 @@
         <section>
             <asp:Button runat="server" Text="Submit"/>
         </section>
+        <!-- Display the users schedule for the month of october -->
         <section id="output" runat="server">
 
         </section>

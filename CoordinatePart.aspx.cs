@@ -20,11 +20,16 @@ namespace BonusAssignment
                    
                     int user_x_cord = Convert.ToInt32(user_x_axis.Text);
                     int user_y_cord = Convert.ToInt32(user_y_axis.Text);
-
+                    //Check if the user enters any zeros to give them an error
                     if (user_x_cord == 0 || user_y_cord == 0)
                     {
                         zero_box.Visible = true;
                         zero_box.InnerHtml = "Please do not use 0s";
+                    }
+                    if (user_x_cord.GetType() = true ||user_y_cord.GetType() = true)
+                    {
+                        zero_box.Visible = true;
+                        zero_box.InnerHtml = "Please enter a integer";
                     }
                     else
                     {
